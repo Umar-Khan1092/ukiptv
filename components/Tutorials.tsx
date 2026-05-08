@@ -8,7 +8,7 @@ const guides = [
   {
     id: "firestick",
     name: "Firestick / Fire TV",
-    icon: <Gamepad2 />,
+    icon: Gamepad2,
     steps: [
       "Install Downloader from App Store",
       "Enable Apps from Unknown Sources in Settings",
@@ -20,7 +20,7 @@ const guides = [
   {
     id: "android",
     name: "Android (Phone/Box)",
-    icon: <Smartphone />,
+    icon: Smartphone,
     steps: [
       "Open Google Play Store",
       "Install IPTV Smarters / Tivimate / OTT Navigator",
@@ -31,7 +31,7 @@ const guides = [
   {
     id: "smart-tv",
     name: "Smart TV (LG/Samsung)",
-    icon: <Tv />,
+    icon: Tv,
     steps: [
       "Open your TV's App Store (LG Content Store / Smart Hub)",
       "Search and install 'IPTV Smarters' or 'Smart IPTV'",
@@ -42,7 +42,7 @@ const guides = [
   {
     id: "apple",
     name: "Apple / iOS",
-    icon: <Monitor />,
+    icon: Monitor,
     steps: [
       "Download IPTV Smarters or GSE Smart IPTV from App Store",
       "Open the app",
@@ -53,7 +53,7 @@ const guides = [
   {
     id: "pc",
     name: "Windows / PC",
-    icon: <Laptop />,
+    icon: Laptop,
     steps: [
       "Download and install VLC Media Player",
       "Go to Media > Open Network Stream",
@@ -91,7 +91,7 @@ export default function Tutorials() {
                 )}
               >
                 <span className={cn(activeId === guide.id ? "text-white" : "text-blue-500")}>
-                  {React.cloneElement(guide.icon as React.ReactElement, { size: 24 })}
+                  <guide.icon size={24} />
                 </span>
                 <span className="font-semibold">{guide.name}</span>
               </button>

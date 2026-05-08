@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import type { Metadata } from "metadata";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Refund Policy - IPTV UK",
