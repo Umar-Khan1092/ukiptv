@@ -20,7 +20,7 @@ export default function Home() {
       {/* Quick Trust Section */}
       <section className="py-12 border-y border-white/5 bg-slate-900/30">
         <div className="container mx-auto px-6">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 grayscale hover:grayscale-0 transition-all">
             <div className="flex items-center gap-2 font-bold text-slate-300">4K ULTRA HD</div>
             <div className="flex items-center gap-2 font-bold text-slate-300">ANTI-FREEZE</div>
             <div className="flex items-center gap-2 font-bold text-slate-300">INSTANT SETUP</div>
@@ -69,7 +69,7 @@ export default function Home() {
                       <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/40">
                          <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[15px] border-l-white border-b-[10px] border-b-transparent ml-1" />
                       </div>
-                      <h4 className="text-white font-bold text-xl mb-2">Premium 4K Streaming</h4>
+                      <h3 className="text-white font-bold text-xl mb-2">Premium 4K Streaming</h3>
                       <p className="text-slate-400">Optimized for stability and quality</p>
                     </div>
                  </div>

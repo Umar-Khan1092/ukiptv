@@ -99,7 +99,7 @@ export default function Pricing() {
                 <div className="flex justify-center items-start gap-0.5">
                   <span className="text-5xl font-extrabold text-white">£{plan.price}</span>
                 </div>
-                <p className="text-slate-500 text-sm mt-2">{plan.duration}</p>
+                <p className="text-slate-400 text-sm mt-2">{plan.duration}</p>
               </div>
 
               <div className="space-y-4 mb-10">

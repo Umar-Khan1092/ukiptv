@@ -53,6 +53,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased scroll-smooth" data-scroll-behavior="smooth">
+      <head>
+        <link rel="preconnect" href="https://wa.me" />
+        <link rel="preconnect" href="https://www.transparenttextures.com" />
+        <link rel="dns-prefetch" href="https://wa.me" />
+        <link rel="dns-prefetch" href="https://www.transparenttextures.com" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} min-h-full flex flex-col font-sans`}>
         {children}
         <WhatsAppButton />

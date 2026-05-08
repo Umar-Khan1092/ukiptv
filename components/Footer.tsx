@@ -25,10 +25,10 @@ export default function Footer() {
               The #1 UK IPTV service provider delivering ultra-fast 4K & 8K streaming with zero buffering. Experience entertainment without limits.
             </p>
             <div className="flex items-center gap-4">
-              <Link href="https://wa.me/447988579524" target="_blank" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-blue-600 transition-colors">
+              <Link href="https://wa.me/447988579524" target="_blank" aria-label="Chat on WhatsApp" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <MessageSquare size={18} className="text-white" />
               </Link>
-              <Link href="mailto:support@ukiptv.sbs" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-blue-600 transition-colors">
+              <Link href="mailto:support@ukiptv.sbs" aria-label="Send us an Email" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Mail size={18} className="text-white" />
               </Link>
             </div>
@@ -36,7 +36,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-xs">Menu</h4>
+            <h3 className="text-white font-bold mb-6 uppercase tracking-wider text-xs">Menu</h3>
             <ul className="space-y-4">
               <li><Link href="/" className="text-slate-400 hover:text-blue-500 transition-colors text-sm">Home</Link></li>
               <li><Link href="/#pricing" className="text-slate-400 hover:text-blue-500 transition-colors text-sm">Pricing</Link></li>
@@ -50,7 +50,7 @@ export default function Footer() {
 
           {/* Support */}
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-xs">Legal</h4>
+            <h3 className="text-white font-bold mb-6 uppercase tracking-wider text-xs">Legal</h3>
             <ul className="space-y-4">
               {["Privacy Policy", "Refund Policy", "Terms of Service", "DMCA Policy"].map((link) => (
                 <li key={link}>
@@ -64,7 +64,7 @@ export default function Footer() {
 
           {/* Trust Indicators */}
           <div className="space-y-6">
-            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-xs">Payment Methods</h4>
+            <h3 className="text-white font-bold mb-6 uppercase tracking-wider text-xs">Payment Methods</h3>
             <div className="flex flex-wrap gap-3">
               <div className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-[10px] font-bold text-slate-400">VISA</div>
               <div className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-[10px] font-bold text-slate-400">MASTERCARD</div>
@@ -76,7 +76,7 @@ export default function Footer() {
                 <Shield size={18} className="text-blue-500" />
                 Secure Checkout
               </div>
-              <p className="text-[11px] text-slate-500">
+              <p className="text-[11px] text-slate-400">
                 Your data is encrypted and protected with industry-standard 256-bit SSL technology.
               </p>
             </div>
@@ -84,10 +84,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-slate-500 text-xs">
+          <p className="text-slate-400 text-xs">
             © {new Date().getFullYear()} IPTV UK. All rights reserved. Built for speed and reliability.
           </p>
-          <div className="flex items-center gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+          <div className="flex items-center gap-6 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
             <span className="flex items-center gap-2">
               <Globe size={12} />
               Server Status: Online
