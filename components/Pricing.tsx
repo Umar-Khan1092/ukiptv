@@ -7,99 +7,127 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Starter",
-    duration: "1 Month",
+    name: "MONTH",
+    duration: "per month",
     price: "15",
-    features: ["Instant Activation", "Full EPG Support", "Anti-Freeze Technology", "Free VPN Included", "All UK & Int Channels"],
+    features: [
+      { icon: "📺", text: "28K+ Live Channels" },
+      { icon: "🎬", text: "100K+ Movies & Series" },
+      { icon: "🖥️", text: "4K / FHD / HD Quality" },
+      { icon: "⚽", text: "Sports & PPV" },
+      { icon: "❄️", text: "Anti-Freeze Tech" },
+      { icon: "📱", text: "All Devices" },
+      { icon: "📅", text: "EPG & Catch-Up" },
+      { icon: "💬", text: "24/7 Support" },
+    ],
     popular: false,
   },
   {
-    name: "Value",
-    duration: "3 Months",
+    name: "3 MONTHS",
+    duration: "every 3 months",
     price: "35",
-    features: ["Instant Activation", "Full EPG Support", "Anti-Freeze Technology", "Free VPN Included", "Multi-Device Support"],
+    features: [
+      { icon: "📺", text: "28K+ Live Channels" },
+      { icon: "🎬", text: "100K+ Movies & Series" },
+      { icon: "🖥️", text: "4K / FHD / HD Quality" },
+      { icon: "⚽", text: "Sports & PPV" },
+      { icon: "❄️", text: "Anti-Freeze Tech" },
+      { icon: "📱", text: "All Devices" },
+      { icon: "📅", text: "EPG & Catch-Up" },
+      { icon: "💬", text: "24/7 Support" },
+    ],
     popular: false,
   },
   {
-    name: "Best Seller",
-    duration: "6 Months",
-    price: "45",
-    features: ["Instant Activation", "Full EPG Support", "Anti-Freeze Technology", "Free VPN Included", "Premium Sports & PPV"],
+    name: "12 MONTHS",
+    duration: "per year",
+    price: "65",
+    features: [
+      { icon: "📺", text: "28K+ Live Channels" },
+      { icon: "🎬", text: "100K+ Movies & Series" },
+      { icon: "🖥️", text: "4K / FHD / HD Quality" },
+      { icon: "⚽", text: "Sports & PPV" },
+      { icon: "❄️", text: "Anti-Freeze Tech" },
+      { icon: "📱", text: "All Devices" },
+      { icon: "📅", text: "EPG & Catch-Up" },
+      { icon: "💬", text: "24/7 Support" },
+    ],
     popular: true,
   },
   {
-    name: "Premium",
-    duration: "12 Months",
-    price: "65",
-    features: ["Instant Activation", "Full EPG Support", "Anti-Freeze Technology", "Free VPN Included", "VIP Support Support"],
+    name: "6 MONTHS",
+    duration: "every six months",
+    price: "45",
+    features: [
+      { icon: "📺", text: "28K+ Live Channels" },
+      { icon: "🎬", text: "100K+ Movies & Series" },
+      { icon: "🖥️", text: "4K / FHD / HD Quality" },
+      { icon: "⚽", text: "Sports & PPV" },
+      { icon: "❄️", text: "Anti-Freeze Tech" },
+      { icon: "📱", text: "All Devices" },
+      { icon: "📅", text: "EPG & Catch-Up" },
+      { icon: "💬", text: "24/7 Support" },
+    ],
     popular: false,
   },
 ];
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-24 relative overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/10 blur-[120px] rounded-full -z-10" />
-
-      <div className="container mx-auto px-6">
+    <section id="pricing" className="py-24 bg-black relative">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Choose Your <span className="text-blue-500">Subscription</span> Plan</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight">Flexible <span className="text-blue-500">Subscription</span> Plans</h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Experience the future of streaming with our flexible plans. No contracts, no auto-billing, just premium entertainment.
+            Get the best entertainment experience with our premium IPTV service.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {plans.map((plan, i) => (
             <div
               key={i}
               className={cn(
-                "relative p-8 rounded-3xl flex flex-col transition-all duration-300",
+                "relative p-8 rounded-xl flex flex-col transition-all duration-300 bg-[#0a0f1d]",
                 plan.popular 
-                  ? "bg-slate-900 border-2 border-blue-500 scale-105 z-10 shadow-2xl shadow-blue-500/10" 
-                  : "bg-slate-900/50 border border-slate-800 hover:border-slate-700"
+                  ? "border-2 border-blue-500 scale-100 z-10" 
+                  : "border border-slate-800"
               )}
             >
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                  Most Popular
+              <div className="text-center mb-10">
+                <h3 className="text-lg font-bold text-slate-300 mb-2 tracking-widest">{plan.name}</h3>
+                <div className="flex justify-center items-start gap-0.5">
+                  <span className="text-5xl font-extrabold text-white">£{plan.price}</span>
                 </div>
-              )}
-
-              <div className="mb-8">
-                <h3 className="text-xl font-bold text-white mb-2">{plan.name}</h3>
-                <p className="text-slate-400 text-sm mb-6">{plan.duration}</p>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-4xl font-bold text-white">£{plan.price}</span>
-                  <span className="text-slate-400">/period</span>
-                </div>
+                <p className="text-slate-500 text-sm mt-2">{plan.duration}</p>
               </div>
 
-              <div className="flex-grow space-y-4 mb-8">
+              <div className="space-y-4 mb-10">
                 {plan.features.map((feature, idx) => (
-                  <div key={idx} className="flex items-center gap-3 text-sm text-slate-300">
-                    <Check size={18} className="text-blue-500 shrink-0" />
-                    <span>{feature}</span>
+                  <div key={idx} className="flex items-center gap-3 text-sm font-medium text-slate-300">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
+                    <span className="text-lg">{feature.icon}</span>
+                    <span className="text-slate-300">{feature.text}</span>
                   </div>
                 ))}
               </div>
 
-              <Link
-                href={`https://wa.me/447988579524?text=Hi, I would like to subscribe to the ${plan.duration} plan.`}
-                target="_blank"
-                className={cn(
-                  "w-full py-4 rounded-xl font-bold text-center transition-all",
-                  plan.popular ? "btn-primary" : "bg-white/5 hover:bg-white/10 text-white"
-                )}
-              >
-                Get Subscription
-              </Link>
+              <div className="mt-auto">
+                <Link
+                  href={`https://wa.me/447988579524?text=Hi, I would like to subscribe to the ${plan.name} plan.`}
+                  target="_blank"
+                  className={cn(
+                    "block w-full py-4 rounded-xl font-bold text-center uppercase tracking-widest transition-all",
+                    plan.popular 
+                      ? "bg-[#00a3ff] text-black hover:bg-[#0082cc]" 
+                      : "bg-[#161b2c] text-white hover:bg-[#1e253a]"
+                  )}
+                >
+                  Get Started
+                </Link>
+              </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 text-center text-slate-500 text-sm">
-          * 30-day money-back guarantee. Try our service risk-free.
         </div>
       </div>
     </section>

@@ -2,17 +2,22 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { PlayCircle, ShieldCheck, Zap } from "lucide-react";
 
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat scale-105"
-        style={{ backgroundImage: "url('/hero.png')" }}
-      >
+      {/* Optimized Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/hero.png"
+          alt="IPTV UK Hero Background"
+          fill
+          priority
+          className="object-cover object-center scale-105"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/60 to-slate-950" />
       </div>
 
@@ -26,11 +31,11 @@ export default function Hero() {
             The Future of Television
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            #1 UK IPTV Service – <br />
-            <span className="text-gradient">Ultra-Fast 4K & 8K</span> Streaming
+            UK IPTV Service – <br />
+            <span className="text-gradient">Ultra-Fast 4K & 8K</span> Streaming Without Buffering
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-300 mb-10 leading-relaxed">
-            Experience the ultimate UK IPTV service with blazing-fast 4K and 8K streaming, zero buffering, and instant activation. Access thousands of live UK and worldwide channels on any device.
+            Experience the ultimate UK IPTV service with blazing-fast 4K and 8K streaming, zero buffering, and instant activation. Access thousands of live UK and worldwide channels, movies, and series on any device. Enjoy premium quality, reliable servers, and a risk-free money-back guarantee—built for seamless entertainment anytime, anywhere.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">

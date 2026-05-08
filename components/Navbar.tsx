@@ -7,12 +7,13 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "Installation Guide", href: "#tutorials" },
-  { name: "FAQ", href: "#faq" },
-  { name: "Blog", href: "#blog" },
-  { name: "About Us", href: "#about" },
-  { name: "Contact Us", href: "#contact" },
+  { name: "Home", href: "/" },
+  { name: "Pricing", href: "/#pricing" },
+  { name: "Installation Guide", href: "/installation-guide" },
+  { name: "FAQ", href: "/faq" },
+  { name: "Blog", href: "/blog" },
+  { name: "About Us", href: "/about-us" },
+  { name: "Contact Us", href: "/contact-us" },
 ];
 
 export default function Navbar() {
@@ -39,9 +40,10 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="IPTV UK Logo"
-            width={150}
-            height={50}
+            width={120}
+            height={32}
             className="h-10 w-auto"
+            priority
           />
         </Link>
 

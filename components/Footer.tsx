@@ -17,7 +17,7 @@ export default function Footer() {
                 src="/logo.png"
                 alt="IPTV UK Logo"
                 width={150}
-                height={50}
+                height={40}
                 className="h-10 w-auto"
               />
             </Link>
@@ -38,13 +38,13 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-xs">Menu</h4>
             <ul className="space-y-4">
-              {["Home", "Pricing", "Installation Guide", "FAQ", "Blog", "About Us"].map((link) => (
-                <li key={link}>
-                  <Link href={`#${link.toLowerCase().replace(" ", "-")}`} className="text-slate-400 hover:text-blue-500 transition-colors text-sm">
-                    {link}
-                  </Link>
-                </li>
-              ))}
+              <li><Link href="/" className="text-slate-400 hover:text-blue-500 transition-colors text-sm">Home</Link></li>
+              <li><Link href="/#pricing" className="text-slate-400 hover:text-blue-500 transition-colors text-sm">Pricing</Link></li>
+              <li><Link href="/installation-guide" className="text-slate-400 hover:text-blue-500 transition-colors text-sm">Installation Guide</Link></li>
+              <li><Link href="/faq" className="text-slate-400 hover:text-blue-500 transition-colors text-sm">FAQ</Link></li>
+              <li><Link href="/blog" className="text-slate-400 hover:text-blue-500 transition-colors text-sm">Blog</Link></li>
+              <li><Link href="/about-us" className="text-slate-400 hover:text-blue-500 transition-colors text-sm">About Us</Link></li>
+              <li><Link href="/contact-us" className="text-slate-400 hover:text-blue-500 transition-colors text-sm">Contact Us</Link></li>
             </ul>
           </div>
 

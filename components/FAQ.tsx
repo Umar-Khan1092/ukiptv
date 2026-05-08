@@ -6,28 +6,36 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
   {
-    question: "What is IPTV and how does it work?",
-    answer: "IPTV (Internet Protocol Television) streams TV content over the internet instead of satellite or cable. You only need a stable internet connection and a compatible device to start watching live TV channels, movies, and series instantly."
+    question: "📺 What is IPTV and how does it work?",
+    answer: "IPTV (Internet Protocol Television) streams TV content over the internet instead of satellite or cable. You only need a stable internet connection and a compatible device to start watching. It gives you instant access to live TV channels, movies, and series in high quality."
   },
   {
-    question: "What devices are compatible with your service?",
-    answer: "Our service works on almost all devices: Smart TVs (LG, Samsung, Android TV), Amazon Firestick, Android/iOS devices, MAG boxes, Enigma2, and PCs (Windows/Mac)."
+    question: "📱 What devices are compatible with your service?",
+    answer: "Our IPTV service works on a wide range of devices including Smart TVs, Android and iOS devices, Firestick, MAG boxes, and Enigma2. You can easily install it using our step-by-step setup guides. No special hardware is required."
   },
   {
-    question: "Do I need a VPN to use your service?",
-    answer: "A VPN is not required, but it is recommended for extra privacy. Our service is fully stable and works perfectly without a VPN on most networks."
+    question: "🔒 Do I need a VPN to use your service?",
+    answer: "A VPN is not required, but it is recommended for extra privacy and secure streaming. Some users prefer using a VPN for additional protection and smoother access. However, our service is fully stable even without it."
   },
   {
-    question: "How quickly will I receive my details?",
-    answer: "Your IPTV login details are usually delivered within a few minutes after payment. In rare cases, it may take up to 15–30 minutes."
+    question: "⚡ How quickly will I receive my subscription details?",
+    answer: "Your IPTV login details are usually delivered within a few minutes after payment. In rare cases, it may take up to 15–30 minutes. Everything is sent directly to your email for instant setup."
   },
   {
-    question: "Can I use my subscription on multiple devices?",
-    answer: "Yes, depending on your plan. We offer multi-device support on select plans. You can always contact support to upgrade your connections."
+    question: "📺 Can I use my subscription on multiple devices?",
+    answer: "Yes, depending on your subscription plan, you can use IPTV on more than one device. Some plans are single-device, while others support multi-device usage. You can always upgrade if you need more connections."
   },
   {
-    question: "What internet speed do I need?",
-    answer: "For smooth streaming, we recommend at least 15 Mbps for HD and 25 Mbps for 4K content. Stability is more important than raw speed."
+    question: "🌐 What internet speed do I need?",
+    answer: "For smooth streaming, we recommend at least 15 Mbps for HD and 25 Mbps for 4K content. Higher speeds ensure better performance and no buffering. A stable connection is more important than very high speed."
+  },
+  {
+    question: "🎁 Do you offer a free trial?",
+    answer: "Yes, we may offer a short trial for new users depending on availability. This allows you to test the service before purchasing a full subscription. Contact support to check trial availability."
+  },
+  {
+    question: "💬 How do I get support if I have issues?",
+    answer: "Our support team is available 24/7 via WhatsApp, live chat, and email. We respond quickly to help with setup, login, or technical issues. Most problems are resolved within minutes."
   }
 ];
 
